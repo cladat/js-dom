@@ -1,0 +1,15 @@
+h1{margin: 40px -15px}
+.active{
+    color: white;
+    background-color: $primary;
+}
+a:hover{
+}
+
+.content{
+    padding: 50px 40px;
+    display: none;
+}
+.visible{
+    display: block;
+}
