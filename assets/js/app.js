@@ -64,3 +64,15 @@
         }
     })
 })();
+
+//exo 5 ajouter des oeufs
+(() => {
+    let btn = document.querySelector('.emoji-adder');
+    let img = "<img src=\"./assets/img/emoji.png\">";
+    let emojis = document.querySelector('.emojis');
+    
+    btn.addEventListener('click', () => {
+        emojis.innerHTML += img;
+    })
+})();
+
