@@ -17,8 +17,8 @@
             <a class="col-3" href="#">EXO 2</a>
             <a class="col-3" href="#">EXO 3</a>
             <a class="col-3" href="#">EXO 4</a>
-            <a class="col-3 active" href="#">EXO 5</a>
-            <a class="col-3" href="#">EXO 6</a>
+            <a class="col-3" href="#">EXO 5</a>
+            <a class="col-3 active" href="#">EXO 6</a>
         </div>
     </div>
 
@@ -66,7 +66,7 @@
                 <button class="btn text-white bg-success">counter <span>0</span></button>
             </div>
         </div>
-        <div class="container bg-light content visible">
+        <div class="container bg-light content">
             <h2>Générer des éléments du DOM</h2>
             <p>Cliquez sur le bouton pour générer un emoji</p>
             <button class="btn btn-success emoji-adder">Ajouter un emoji</button>
@@ -74,8 +74,49 @@
                 
             </div>
         </div>
-        <div class="container bg-light content">
-            6
+        <div class="container bg-light content visible">
+            <h2>Création calculatrice</h2>
+            <h3>niveau 1</h3>
+            <div class="niveau-1">
+                <input type="text">
+                <span>+</span>
+                <input type="text">
+                <button>=</button>
+                <span class="resultat"></span>
+            </div>
+            <h3>niveau 2</h3>
+            <div class="niveau-2 text-white bg-dark">
+                <p class="resultat text-right m-0"></p>
+                <input type="text" class="text-right">
+                <hr class="m-1 mt-2">
+                <div class="row p-2">
+                    <div class="col-3"><button class="btn" id="un">1</button></div>
+                    <div class="col-3"><button class="btn" id="deux">2</button></div>
+                    <div class="col-3"><button class="btn" id="trois">3</button></div>
+                    <div class="col-3"><button class="btn btn-primary" id="plus">+</button></div>
+                </div>
+                <hr class="m-1">
+                <div class="row p-2">
+                    <div class="col-3"><button class="btn" id="quattre">4</button></div>
+                    <div class="col-3"><button class="btn" id="cinq">5</button></div>
+                    <div class="col-3"><button class="btn" id="six">6</button></div>
+                    <div class="col-3"><button class="btn btn-primary" id="moins">-</button></div>
+                </div>
+                <hr class="m-1">
+                <div class="row p-2">
+                    <div class="col-3"><button class="btn" id="sept">7</button></div>
+                    <div class="col-3"><button class="btn" id="huit">8</button></div>
+                    <div class="col-3"><button class="btn" id="neuf">9</button></div>
+                    <div class="col-3"><button class="btn btn-primary" id="fois">*</button></div>
+                </div>
+                <hr class="m-1">
+                <div class="row p-2">
+                    <div class="col-3"><button class="btn btn-danger" id="reset">C</button></div>
+                    <div class="col-3"><button class="btn" id="zero">0</button></div>
+                    <div class="col-3"><button class="btn btn-success" id="egal">=</button></div>
+                    <div class="col-3"><button class="btn btn-primary" id="divise">/</button></div>
+                </div>
+            </div>
         </div>
     </div>
 
