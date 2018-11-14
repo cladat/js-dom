@@ -13,3 +13,16 @@ a:hover{
 .visible{
     display: block;
 }
+
+
+.gauche, .droite{
+    display: flex;
+    min-height: 150px;
+    justify-content: center;
+    align-items: center;
+}
+.red{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+}

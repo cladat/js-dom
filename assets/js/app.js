@@ -10,14 +10,14 @@
              navs[j].classList.remove('active');   
              panels[j].classList.remove('visible');
             }
-            navs[i].classList.toggle('active');
-            panels[i].classList.toggle('visible');
+            navs[i].classList.add('active');
+            panels[i].classList.add('visible');
     
         })
     }
 })();
 
-//exo 2 name submitter
+//exo 3 name submitter
 
 (() => {
     let a = document.querySelector('.panels > .name-submitter');
@@ -28,4 +28,31 @@
     b.addEventListener('click', () => {
         s.innerText = inp.value;
     });
+})();
+
+
+//exo 4 change red + counter
+
+(() => {
+    let gauche = document.querySelector('.gauche');
+    let droite = document.querySelector('.droite');
+    let red = document.querySelector('.red');
+    let change = document.querySelector('.btn.bg-warning');
+    let btnCounter = document.querySelector('.btn.bg-success');
+    let counter = btnCounter.querySelector('span');
+    let count = 0;
+    
+    change.addEventListener('click', () => {
+        count++;
+        counter.innerHTML = count;
+        //switch
+        if(red.parentElement === gauche){
+            gauche.removeChild(red);
+            droite.appendChild(red);
+        }else{
+            droite.removeChild(red);
+            gauche.appendChild(red);
+    
+        }
+    })
 })();
