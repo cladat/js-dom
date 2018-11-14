@@ -14,5 +14,4 @@ for (let i = 0; i < navs.length; i++) {
         panels[i].classList.toggle('visible');
 
     })
-    
 }
