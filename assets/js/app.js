@@ -58,5 +58,9 @@
     btnCounter.addEventListener('click', () => {
         count = 0;
         counter.innerHTML = count;
+        if(red.parentElement == droite){
+            droite.removeChild(red);
+            gauche.appendChild(red);
+        }
     })
 })();
