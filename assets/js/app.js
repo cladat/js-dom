@@ -57,5 +57,6 @@
     })
     btnCounter.addEventListener('click', () => {
         count = 0;
+        counter.innerHTML = count;
     })
 })();
